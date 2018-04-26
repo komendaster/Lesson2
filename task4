@@ -1,0 +1,14 @@
+public class BytesConverter {
+
+    public static void main(String[] args) {
+        long totalBytes = 1074791425;
+
+        long gigaBytes = (long) (totalBytes / Math.pow(1024, 3));
+        long megaBytes = (long) ((totalBytes % Math.pow(1024, 3)) / Math.pow(1024, 2));
+        long kiloBytes = (long) ((totalBytes % Math.pow(1024, 2)) / 1024);
+        long bytes = totalBytes % 1024;
+
+        System.out.println(gigaBytes + " GB, " + megaBytes + " MB, "
+                + kiloBytes + " KB, " + bytes + " B");
+    }
+}
