@@ -1,0 +1,18 @@
+public class DigitsPrinter {
+    public static void main(String[] args) {
+        int n = 24;  // Input: any positive number
+
+        int fifthN = n/10000 % 10;
+        int fourthN = n/1000 % 10;
+        int thirdN = n/100 % 10;
+        int secondN = n/10 % 10;
+        int firstN = n % 10;
+
+        System.out.println(fifthN);
+        System.out.println(fourthN);
+        System.out.println(thirdN);
+        System.out.println(secondN);
+        System.out.println(firstN);
+
+    }
+}
